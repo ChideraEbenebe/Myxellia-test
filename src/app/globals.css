@@ -62,10 +62,11 @@
   --color-light-gray: #e4e4e4;
   --color-deep-gray: #3d3d3d;
   --color-mid-gray: #606060;
-  --color-chart-purple: '#4545fe';
-  --color-chart-mrr: '#12b76a';
-  --color-chart-gmv: '#f04438';
-  --color-chart-cr: '#14b8a6';
+  --color-chart-purple: #4545fe;
+  --color-chart-mrr: #12b76a;
+  --color-chart-gmv: #f04438;
+  --color-chart-cr: #14b8a6;
+  --color-listings-gray: #292929;
   --font-euclid: 'Euclid Circular B', sans-serif;
 }
 
@@ -145,4 +146,13 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  border-radius: 12px;
 }

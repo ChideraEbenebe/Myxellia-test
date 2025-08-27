@@ -40,7 +40,7 @@ export function Chart() {
   return (
     <ChartContainer
       config={chartConfig}
-      className='h-[200px] w-full'>
+      className='h-[160px] w-full'>
       <BarChart
         accessibilityLayer
         data={chartData}>
