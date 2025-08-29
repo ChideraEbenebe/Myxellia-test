@@ -6,8 +6,8 @@ import image3 from '@/assets/image3.jpg';
 
 const Sliders = () => {
   return (
-    <main className='max-w-[1284px] py-5 mx-auto'>
-      <section className='grid grid-cols-3 gap-4'>
+    <main className='max-w-7xl py-5 mx-auto px-4 sm:px-6 lg:px-8'>
+      <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         <div className='relative image'>
           <Image
             src={image1}

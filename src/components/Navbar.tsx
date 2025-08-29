@@ -38,7 +38,7 @@ const Navbar = () => {
     <nav>
       {/* first layer */}
       <div className='bg-main-black h-[82px] relative overflow-x-hidden'>
-        <div className='max-w-[1284px] mx-auto flex justify-between items-center h-full '>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full '>
           <Image
             src={logo}
             alt='Myxellia Logo'
@@ -161,7 +161,7 @@ const Navbar = () => {
       </div>
       {/* second layer */}
       <div className='bg-white h-[67px]'>
-        <div className='max-w-[1284px] mx-auto flex justify-between items-center h-full'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full'>
           <div className='bg-main-gray px-[24.695px] h-[38px] rounded-sm flex gap-2 items-center text-main-black'>
             <Image
               className='size-6'

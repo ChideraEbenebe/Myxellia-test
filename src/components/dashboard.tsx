@@ -13,13 +13,13 @@ import Sliders from '@/components/Sliders';
 const Dashboard = () => {
   return (
     <main className='bg-main-gray '>
-      <div className='max-w-[1284px] mx-auto'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <h2 className='text-main-black font-semibold text-[25px] pt-5 pb-5'>
           Welcome, Ahmed
         </h2>
       </div>
-      <div className='max-w-[1284px] mx-auto'>
-        <div className='grid grid-cols-[857px_407px] gap-5'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='grid lg:grid-cols-[2fr_1fr] gap-5'>
           <div className=' bg-white border border-light-gray rounded-2xl '>
             <div className='flex justify-between items-center py-4 px-5'>
               <div className=' '>
