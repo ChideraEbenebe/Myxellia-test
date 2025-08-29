@@ -136,7 +136,9 @@ export default function Calendar({
                 15
               </td>
               <td className='text-[10px] text-table-days py-1.5 pl-1 border border-table-border align-top'>
-                16
+                <span className='bg-[#2525e6] rounded-full px-2 py-0.5'>
+                  16
+                </span>
               </td>
               <td className='text-[10px] text-table-days py-1.5 pl-1 border border-table-border align-top'>
                 17
