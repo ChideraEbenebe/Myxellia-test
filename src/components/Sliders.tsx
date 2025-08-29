@@ -50,7 +50,7 @@ const Sliders = () => {
           </div>
         </div>
         <div className='relative image'>
-          <div className='h-72'>
+          <div className=''>
             <Image
               src={image3}
               alt='Third backgroud image of house'
