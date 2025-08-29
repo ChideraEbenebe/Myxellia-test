@@ -54,6 +54,7 @@ const Sliders = () => {
             <Image
               src={image3}
               alt='Third backgroud image of house'
+              width={100}
               className='w-full h-full object-cover rounded-[12px]'
             />
           </div>
