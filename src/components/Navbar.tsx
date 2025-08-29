@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import logo from '@/assets/Myxellia logo.svg';
 import bell from '@/assets/Vector.svg';
 import calculator from '@/assets/calculator.svg';
@@ -11,27 +13,31 @@ import profile from '@/assets/Profile 1.svg';
 import article from '@/assets/Article.svg';
 import scroll from '@/assets/Scroll.svg';
 import search from '@/assets/Search 1.svg';
+import trendUp from '@/assets/trend-up.svg';
+import settings from '@/assets/setting-4.svg';
+import bar from '@/assets/bar.svg';
 import Image from 'next/image';
-import { FaBell } from 'react-icons/fa';
-import { FaCalendarDays } from 'react-icons/fa6';
-import { TbCalculatorFilled, TbMessageFilled } from 'react-icons/tb';
-
-const navLinks = [
-  {
-    icon: <FaBell size={26} />,
-  },
-  {
-    icon: <TbCalculatorFilled size={26} />,
-  },
-  { icon: <FaCalendarDays size={26} /> },
-  { icon: <TbMessageFilled size={26} /> },
-];
+import modalImage from '@/assets/media.png';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from './ui/dialog';
+import Calendar from './calendar';
+import clsx from 'clsx';
 
 const Navbar = () => {
+  const [nav, setNav] = useState<boolean>(false);
+
+  function changeNav() {
+    setNav((prev) => !prev);
+  }
   return (
     <nav>
       {/* first layer */}
-      <div className='bg-main-black h-[82px]'>
+      <div className='bg-main-black h-[82px] relative overflow-x-hidden'>
         <div className='max-w-[1284px] mx-auto flex justify-between items-center h-full '>
           <Image
             src={logo}
@@ -47,19 +53,93 @@ const Navbar = () => {
                 alt='bell icon'
                 className='size-8'
               />
-              <Image
-                width={32}
-                height={32}
-                src={calculator}
-                alt='bugeting icon'
-                className='size-8'
-              />
+
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Image
+                    width={32}
+                    height={32}
+                    src={calculator}
+                    alt='calendar icon'
+                    className='size-8'
+                  />
+                </DialogTrigger>
+                <DialogContent
+                  className='w-[438px] p-0 rounded-[10px]'
+                  showCloseButton={false}>
+                  <DialogHeader className='p-0'>
+                    <DialogTitle>
+                      <Image
+                        src={modalImage}
+                        alt='bg image of the modal'
+                        className='w-full full object-cover rounded-t-[10px] rounded-tl-[10px]'
+                      />
+                    </DialogTitle>
+                  </DialogHeader>
+                  <div>
+                    <div className='max-w-[344px] mx-auto h-full space-y-6 py-6'>
+                      <div className='flex gap-3 items-center'>
+                        <Image
+                          src={settings}
+                          alt='settings icon'
+                          className='size-6'
+                        />
+                        <div>
+                          <h4 className='font-bold text-[16px] text-main-black'>
+                            Set up annual budgets by account category
+                          </h4>
+                          <p className='text-mid-gray text-xs '>
+                            Allocate funds across income and expense lines with
+                            full visibility.
+                          </p>
+                        </div>
+                      </div>
+                      <div className='flex gap-3 items-center'>
+                        <Image
+                          src={trendUp}
+                          alt='trend icon'
+                          className='size-6'
+                        />
+                        <div>
+                          <h4 className='font-bold text-[16px] text-main-black'>
+                            Track actuals vs budget in real time
+                          </h4>
+                          <p className='text-mid-gray text-xs '>
+                            See how your community is performing against plan,
+                            month by month.
+                          </p>
+                        </div>
+                      </div>
+                      <div className='flex gap-3 items-center'>
+                        <Image
+                          src={bar}
+                          alt='bar icon'
+                          className='size-6'
+                        />
+                        <div>
+                          <h4 className='font-bold text-[16px] text-main-black'>
+                            Adjust figures and forecast with ease
+                          </h4>
+                          <p className='text-mid-gray text-xs '>
+                            Edit amounts, apply percentage changes, or roll
+                            forward last year’s data—all in one place.
+                          </p>
+                        </div>
+                      </div>
+                      <button className='w-full bg-main-black text-center py-3 rounded-3xl text-white text-[16px]'>
+                        Create Budget
+                      </button>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
               <Image
                 width={32}
                 height={32}
                 src={calendar}
                 alt='calendar icon'
                 className='size-8'
+                onClick={changeNav}
               />
               <Image
                 width={32}
@@ -79,7 +159,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* second layer */}
       <div className='bg-white h-[67px]'>
         <div className='max-w-[1284px] mx-auto flex justify-between items-center h-full'>
@@ -140,6 +219,17 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {nav && (
+        <div
+          className='fixed inset-0 z-10'
+          onClick={changeNav}
+        />
+      )}
+
+      <Calendar
+        func={changeNav}
+        nav={nav}
+      />
     </nav>
   );
 };

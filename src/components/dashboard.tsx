@@ -128,7 +128,7 @@ const Dashboard = () => {
 
           <div className='grid grid-rows-2 gap-3'>
             <div className='border border-light-gray rounded-2xl h-full bg-white'>
-              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between'>
+              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
                 <div className='flex gap-2'>
                   <Image
                     src={home}
@@ -162,7 +162,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className='border border-light-gray rounded-2xl h-full bg-white'>
-              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between'>
+              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
                 <div className='flex gap-2'>
                   <Image
                     src={profile}

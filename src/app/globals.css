@@ -68,6 +68,9 @@
   --color-chart-cr: #14b8a6;
   --color-listings-gray: #292929;
   --font-euclid: 'Euclid Circular B', sans-serif;
+  --color-table-gray: #969696;
+  --color-table-border: #242424;
+  --color-table-days: #bbb;
 }
 
 :root {

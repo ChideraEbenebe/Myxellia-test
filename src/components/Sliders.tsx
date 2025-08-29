@@ -20,11 +20,15 @@ const Sliders = () => {
               Urban Prime Plaza Premiere
             </p>
           </div>
+          <div className='absolute left-[50%] translate-x-[-50%] bottom-3 z-10 flex gap-3'>
+            <div className='rounded-full bg-white h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+          </div>
         </div>
         <div className='relative image'>
           <Image
             src={image2}
-            alt='first backgroud image of house'
+            alt='second backgroud image of house'
             className='h-[286px] w-full object-cover rounded-[12px]  '
           />
           <div className='absolute left-4 bottom-5 z-10'>
@@ -33,11 +37,18 @@ const Sliders = () => {
               Urban Prime Plaza Premiere
             </p>
           </div>
+          <div className='absolute left-[50%] translate-x-[-50%] bottom-3 z-10 flex gap-3'>
+            <div className='rounded-full bg-white h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+          </div>
         </div>
         <div className='relative image'>
           <Image
             src={image3}
-            alt='first backgroud image of house'
+            alt='Third backgroud image of house'
             className='h-[286px] w-full object-cover rounded-[12px]  '
           />
           <div className='absolute left-4 bottom-5 z-10'>
@@ -45,6 +56,13 @@ const Sliders = () => {
             <p className='text-white font-semibold text-[18px] '>
               Urban Prime Plaza Premiere
             </p>
+          </div>
+          <div className='absolute left-[50%] translate-x-[-50%] bottom-3 z-10 flex gap-3'>
+            <div className='rounded-full bg-white h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
+            <div className='rounded-full bg-gradient-to-br from-deep-gray to-mid-gray h-1.5 w-1.5'></div>
           </div>
         </div>
       </section>
