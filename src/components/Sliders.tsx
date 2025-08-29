@@ -12,7 +12,7 @@ const Sliders = () => {
           <Image
             src={image1}
             alt='first backgroud image of house'
-            className='h-[286px] w-full object-cover rounded-[12px]  '
+            className='h-72 w-full object-cover rounded-[12px]  '
           />
           <div className='absolute left-4 bottom-5 z-10'>
             <h4 className='uppercase text-sm text-white'>most clicked</h4>
@@ -29,7 +29,7 @@ const Sliders = () => {
           <Image
             src={image2}
             alt='second backgroud image of house'
-            className='h-[286px] w-full object-cover rounded-[12px]  '
+            className='h-72 w-full object-cover rounded-[12px]  '
           />
           <div className='absolute left-4 bottom-5 z-10'>
             <h4 className='uppercase text-sm text-white'>most watchedlist</h4>
@@ -49,7 +49,7 @@ const Sliders = () => {
           <Image
             src={image3}
             alt='Third backgroud image of house'
-            className='h-[286px] w-full object-cover rounded-[12px]  '
+            className='h-72 w-full object-cover rounded-[12px]  '
           />
           <div className='absolute left-4 bottom-5 z-10'>
             <h4 className='uppercase text-sm text-white'>hottest listings</h4>

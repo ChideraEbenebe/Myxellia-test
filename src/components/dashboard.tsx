@@ -28,7 +28,7 @@ const Dashboard = () => {
                   Showing overview Jan 2022 - Sep 2022
                 </p>
               </div>
-              <button className='w-[177px] h-[46px] rounded-[72px] border border-[#d6d6d6]'>
+              <button className='min-w-[140px] h-12 rounded-[72px] border border-[#d6d6d6] px-4'>
                 View Transactions
               </button>
             </div>
@@ -62,9 +62,9 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className='flex flex-col gap-3.5'>
-                <div className='grid grid-cols-2'>
+                <div className='grid grid-cols-2 gap-2'>
                   {/* total inflow */}
-                  <div className='w-[189px] h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
+                  <div className='min-h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
                     <h5 className='flex items-center text-chart-purple font-semibold gap-0'>
                       <TbCurrencyNaira className='size-[19px] text-[19px]' />
                       <span className=' text-[19px]'>120,000,000.00</span>
@@ -79,7 +79,7 @@ const Dashboard = () => {
                   </div>
 
                   {/* marginal revenue */}
-                  <div className='w-[189px] h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
+                  <div className='min-h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
                     <h5 className='flex items-center text-chart-mrr font-semibold gap-0'>
                       <TbCurrencyNaira className='size-[19px] text-[19px]' />
                       <span className=' text-[19px]'>50,000,000.00</span>
@@ -93,9 +93,9 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div className='grid grid-cols-2'>
+                <div className='grid grid-cols-2 gap-2'>
                   {/* commision revenue */}
-                  <div className='w-[189px] h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
+                  <div className='min-h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
                     <h5 className='flex items-center text-chart-cr font-semibold gap-0'>
                       <TbCurrencyNaira className='size-[19px] text-[19px]' />
                       <span className=' text-[19px]'>200,000,000.00</span>
@@ -108,7 +108,7 @@ const Dashboard = () => {
                       </p>
                     </div>
                   </div>
-                  <div className='w-[189px] h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
+                  <div className='min-h-[73px] border-light-gray border px-2.5 py-2.5 rounded-2xl flex flex-col justify-between'>
                     <h5 className='flex items-center text-chart-gmv font-semibold gap-0'>
                       <TbCurrencyNaira className='size-[19px] text-[19px]' />
                       <span className=' text-[19px]'>100,000,000.00</span>
@@ -128,7 +128,7 @@ const Dashboard = () => {
 
           <div className='grid grid-rows-2 gap-3'>
             <div className='border border-light-gray rounded-2xl h-full bg-white'>
-              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
+              <div className='h-14 w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
                 <div className='flex gap-2'>
                   <Image
                     src={home}
@@ -144,7 +144,7 @@ const Dashboard = () => {
                   <MdOutlineKeyboardArrowRight className='size-4.5' />
                 </div>
               </div>
-              <div className='grid grid-cols-3 gap-2 h-[115px] p-3'>
+              <div className='grid grid-cols-3 gap-2 min-h-[115px] p-3'>
                 <div className='flex flex-col px-4 justify-center space-y-3'>
                   <h6 className='text-deep-gray text-sm'>Total</h6>
                   <p className='font-semibold text-main-black text-2xl'>1.8k</p>
@@ -162,7 +162,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className='border border-light-gray rounded-2xl h-full bg-white'>
-              <div className='h-[56px] w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
+              <div className='h-14 w-full bg-main-gray flex px-4 py-2 items-center justify-between rounded-t-2xl rounded-tl-2xl'>
                 <div className='flex gap-2'>
                   <Image
                     src={profile}
@@ -178,7 +178,7 @@ const Dashboard = () => {
                   <MdOutlineKeyboardArrowRight className='size-4.5' />
                 </div>
               </div>
-              <div className='grid grid-cols-3 gap-2 h-[115px] p-3'>
+              <div className='grid grid-cols-3 gap-2 min-h-[115px] p-3'>
                 <div className='flex flex-col px-4 justify-center space-y-3'>
                   <h6 className='text-deep-gray text-sm'>Total</h6>
                   <p className='font-semibold text-main-black text-2xl'>

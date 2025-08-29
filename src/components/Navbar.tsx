@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav>
       {/* first layer */}
-      <div className='bg-main-black h-[82px] relative overflow-x-hidden'>
+      <div className='bg-main-black h-20 relative overflow-x-hidden'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full '>
           <Image
             src={logo}
@@ -65,7 +65,7 @@ const Navbar = () => {
                   />
                 </DialogTrigger>
                 <DialogContent
-                  className='w-[438px] p-0 rounded-[10px]'
+                  className='w-full max-w-md p-0 rounded-[10px]'
                   showCloseButton={false}>
                   <DialogHeader className='p-0'>
                     <DialogTitle>
@@ -77,7 +77,7 @@ const Navbar = () => {
                     </DialogTitle>
                   </DialogHeader>
                   <div>
-                    <div className='max-w-[344px] mx-auto h-full space-y-6 py-6'>
+                    <div className='max-w-sm mx-auto h-full space-y-6 py-6'>
                       <div className='flex gap-3 items-center'>
                         <Image
                           src={settings}
@@ -160,9 +160,9 @@ const Navbar = () => {
         </div>
       </div>
       {/* second layer */}
-      <div className='bg-white h-[67px]'>
+      <div className='bg-white h-16'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full'>
-          <div className='bg-main-gray px-[24.695px] h-[38px] rounded-sm flex gap-2 items-center text-main-black'>
+          <div className='bg-main-gray px-6 h-10 rounded-sm flex gap-2 items-center text-main-black'>
             <Image
               className='size-6'
               src={home}
@@ -214,7 +214,7 @@ const Navbar = () => {
             <input
               type='text'
               placeholder='Search listings, users here...'
-              className='bg-light-gray w-[319px] h-[43px]  rounded-[10px] py-3.5 pl-12 placeholder:text-deep-gray border border-main-gray'
+              className='bg-light-gray w-full max-w-xs h-11 rounded-[10px] py-3.5 pl-12 placeholder:text-deep-gray border border-main-gray'
             />
           </div>
         </div>
